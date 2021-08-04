@@ -14,6 +14,7 @@
 		443B878D26B9B5A500F3CC6C /* Recycl_ED.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 443B878B26B9B5A500F3CC6C /* Recycl_ED.xcdatamodeld */; };
 		443B878F26B9B5AA00F3CC6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443B878E26B9B5AA00F3CC6C /* Assets.xcassets */; };
 		443B879226B9B5AA00F3CC6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B879026B9B5AA00F3CC6C /* LaunchScreen.storyboard */; };
+		443B879C26BB00EA00F3CC6C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B879B26BB00EA00F3CC6C /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		443B878E26B9B5AA00F3CC6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		443B879126B9B5AA00F3CC6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443B879326B9B5AA00F3CC6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		443B879B26BB00EA00F3CC6C /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				443B878426B9B5A500F3CC6C /* SceneDelegate.swift */,
 				443B878626B9B5A500F3CC6C /* ViewController.swift */,
 				443B878826B9B5A500F3CC6C /* Main.storyboard */,
+				443B879B26BB00EA00F3CC6C /* InfoViewController.swift */,
 				443B878E26B9B5AA00F3CC6C /* Assets.xcassets */,
 				443B879026B9B5AA00F3CC6C /* LaunchScreen.storyboard */,
 				443B879326B9B5AA00F3CC6C /* Info.plist */,
@@ -143,6 +146,7 @@
 				443B878D26B9B5A500F3CC6C /* Recycl_ED.xcdatamodeld in Sources */,
 				443B878726B9B5A500F3CC6C /* ViewController.swift in Sources */,
 				443B878326B9B5A500F3CC6C /* AppDelegate.swift in Sources */,
+				443B879C26BB00EA00F3CC6C /* InfoViewController.swift in Sources */,
 				443B878526B9B5A500F3CC6C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
