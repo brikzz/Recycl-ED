@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		102858A026BBF26900006356 /* 86-863584_potted-plants-clipart-transparent-background-transparent-background-plants.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028589F26BBF26900006356 /* 86-863584_potted-plants-clipart-transparent-background-transparent-background-plants.png */; };
+		102858A226BC05FC00006356 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102858A126BC05FC00006356 /* Quiz.swift */; };
 		443B878326B9B5A500F3CC6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B878226B9B5A500F3CC6C /* AppDelegate.swift */; };
 		443B878526B9B5A500F3CC6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B878426B9B5A500F3CC6C /* SceneDelegate.swift */; };
 		443B878726B9B5A500F3CC6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B878626B9B5A500F3CC6C /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1028589F26BBF26900006356 /* 86-863584_potted-plants-clipart-transparent-background-transparent-background-plants.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "86-863584_potted-plants-clipart-transparent-background-transparent-background-plants.png"; path = "../../../Downloads/86-863584_potted-plants-clipart-transparent-background-transparent-background-plants.png"; sourceTree = "<group>"; };
+		102858A126BC05FC00006356 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		443B877F26B9B5A500F3CC6C /* Recycl-ED.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recycl-ED.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		443B878226B9B5A500F3CC6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443B878426B9B5A500F3CC6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				443B879026B9B5AA00F3CC6C /* LaunchScreen.storyboard */,
 				443B879326B9B5AA00F3CC6C /* Info.plist */,
 				443B878B26B9B5A500F3CC6C /* Recycl_ED.xcdatamodeld */,
+				1028589F26BBF26900006356 /* 86-863584_potted-plants-clipart-transparent-background-transparent-background-plants.png */,
+				102858A126BC05FC00006356 /* Quiz.swift */,
 			);
 			path = "Recycl-ED";
 			sourceTree = "<group>";
@@ -131,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				443B879226B9B5AA00F3CC6C /* LaunchScreen.storyboard in Resources */,
+				102858A026BBF26900006356 /* 86-863584_potted-plants-clipart-transparent-background-transparent-background-plants.png in Resources */,
 				443B878F26B9B5AA00F3CC6C /* Assets.xcassets in Resources */,
 				443B878A26B9B5A500F3CC6C /* Main.storyboard in Resources */,
 			);
@@ -145,6 +152,7 @@
 			files = (
 				443B878D26B9B5A500F3CC6C /* Recycl_ED.xcdatamodeld in Sources */,
 				443B878726B9B5A500F3CC6C /* ViewController.swift in Sources */,
+				102858A226BC05FC00006356 /* Quiz.swift in Sources */,
 				443B878326B9B5A500F3CC6C /* AppDelegate.swift in Sources */,
 				443B879C26BB00EA00F3CC6C /* InfoViewController.swift in Sources */,
 				443B878526B9B5A500F3CC6C /* SceneDelegate.swift in Sources */,

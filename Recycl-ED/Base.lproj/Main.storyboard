@@ -248,13 +248,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yq-9p-JkM">
-                                <rect key="frame" x="142" y="327" width="43" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7It-CG-nFP">
                                 <rect key="frame" x="0.0" y="828" width="414" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -265,15 +258,69 @@
                                     <tabBarItem title="Status" id="m79-AU-U5w"/>
                                 </items>
                             </tabBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajk-5j-DKc">
+                                <rect key="frame" x="152" y="219.5" width="262" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="A. Soda can" backgroundImage="capsule.fill" catalog="system">
+                                    <color key="titleColor" red="0.9187730959" green="1" blue="0.80789866420000001" alpha="0.8085597967" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Sd-Wa-HUb">
+                                <rect key="frame" x="152" y="327.5" width="262" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="B. Newspaper" backgroundImage="capsule.fill" catalog="system">
+                                    <color key="titleColor" red="0.87287879329999996" green="0.95004827329999997" blue="0.76754273090000003" alpha="0.8085597967" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHM-Fp-aF4">
+                                <rect key="frame" x="149" y="453.5" width="265" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="C. Candy wrapper" backgroundImage="capsule.fill" catalog="system">
+                                    <color key="titleColor" red="0.9187730959" green="1" blue="0.80789866420000001" alpha="0.8085597967" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8V-I1-vyf">
+                                <rect key="frame" x="156" y="575.5" width="250" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="D. Plastic fork" backgroundImage="capsule.fill" catalog="system">
+                                    <color key="titleColor" red="0.9187730959" green="1" blue="0.80789866420000001" alpha="0.8085597967" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unnamed" highlightedImage="unnamed" translatesAutoresizingMaskIntoConstraints="NO" id="VMg-eM-bK9">
+                                <rect key="frame" x="-27" y="454" width="168" height="323"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEF-7d-mJj">
+                                <rect key="frame" x="324" y="735" width="82" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" backgroundImage="arrowtriangle.forward" catalog="system">
+                                    <color key="titleColor" red="0.9187730959" green="1" blue="0.80789866420000001" alpha="0.8085597967" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Which of the following can’t be recycled?" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.45000000000000001" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lad-or-DeQ">
+                                <rect key="frame" x="35" y="65" width="344" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
+                                <color key="textColor" red="0.16143492967411568" green="0.2360221785728378" blue="0.069161381123605759" alpha="0.93063172599337751" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bTn-F3-bwz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.91877309589844014" green="1" blue="0.80789866423837431" alpha="0.80855979666804634" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.16143492970000001" green="0.23602217859999999" blue="0.069161381120000004" alpha="0.93063172599999999" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Minigame" id="fIf-o6-A2m"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="84G-AI-eJa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="71" y="1258"/>
+            <point key="canvasLocation" x="69.565217391304358" y="1256.9196428571429"/>
         </scene>
         <!--Map-->
         <scene sceneID="k51-s9-aWF">
@@ -294,7 +341,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrowtriangle.forward" catalog="system" width="128" height="113"/>
         <image name="bottles" width="2000" height="1325"/>
+        <image name="capsule.fill" catalog="system" width="128" height="94"/>
+        <image name="unnamed" width="512" height="432"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
