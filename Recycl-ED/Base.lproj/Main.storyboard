@@ -27,11 +27,11 @@
             </objects>
             <point key="canvasLocation" x="-1420" y="-110"/>
         </scene>
-        <!--Item-->
+        <!--Info-->
         <scene sceneID="AVk-L8-EeX">
             <objects>
                 <navigationController id="kgS-uI-Mnt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Li5-Gj-FBo"/>
+                    <tabBarItem key="tabBarItem" title="Info" id="Li5-Gj-FBo"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8eu-hI-SOY">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -60,20 +60,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lKL-FG-0Os">
-                                <rect key="frame" x="0.0" y="194" width="414" height="619"/>
+                                <rect key="frame" x="0.0" y="289" width="414" height="524"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lqu-sB-Dt6">
-                                <rect key="frame" x="160" y="44" width="95" height="95"/>
+                                <rect key="frame" x="160" y="113" width="95" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find the nearest bottle redemption center!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpb-uN-MDK">
-                                <rect key="frame" x="46" y="158" width="322" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A7y-nf-V9e">
                                 <rect key="frame" x="0.0" y="830" width="414" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -84,6 +77,13 @@
                                     <tabBarItem title="Status" id="IWW-Rt-Zr7"/>
                                 </items>
                             </tabBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find the nearest bottle redemption center!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpb-uN-MDK">
+                                <rect key="frame" x="46" y="237" width="322" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -92,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2510" y="1258"/>
+            <point key="canvasLocation" x="-2510.144927536232" y="1257.5892857142856"/>
         </scene>
         <!--Item-->
         <scene sceneID="WfE-be-Pq0">
@@ -116,12 +116,11 @@
             <objects>
                 <viewController id="mut-qq-vPp" customClass="InfoViewController" customModule="Recycl_ED" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HEa-41-vHj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H9a-2j-dQ7">
-                                <rect key="frame" x="0.0" y="826" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H9a-2j-dQ7">
+                                <rect key="frame" x="0.0" y="1130" width="414" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem title="Map" id="vQ1-wB-OZg"/>
@@ -129,33 +128,76 @@
                                     <tabBarItem title="Status" id="NYz-NL-ttI"/>
                                 </items>
                             </tabBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="H4N-Ff-JMG">
-                                <rect key="frame" x="54" y="327" width="307" height="299"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">The New York State has a returnable container act which charges each bottle with a 5c tax which can be redeemed when you recycle these bottles. This bill reduced roadside bottle litter by 70% and in 2020, it helped recycle 241,505 tons of containers. This app can find places to redeem these bottles for extra pocket change. We can also help you make a difference in this world by signing petitions and taking action.
-</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14m-Q9-aO8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14m-Q9-aO8">
                                 <rect key="frame" x="103" y="661" width="208" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Click to see how you can help!"/>
                                 <connections>
                                     <segue destination="Yw2-kr-vvC" kind="show" id="3Zu-5p-HQ8"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottles" translatesAutoresizingMaskIntoConstraints="NO" id="lI0-L1-20U">
-                                <rect key="frame" x="-11" y="0.0" width="437" height="297"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oji-CG-mBI">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1500"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewy-45-Eub" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="-11" width="414" height="1500"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottles" translatesAutoresizingMaskIntoConstraints="NO" id="lI0-L1-20U">
+                                                <rect key="frame" x="-11" y="-95" width="437" height="297"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="H4N-Ff-JMG">
+                                                <rect key="frame" x="54" y="210" width="307" height="299"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="299" id="Sfw-7U-WJ8"/>
+                                                </constraints>
+                                                <string key="text">The New York State has a returnable container act which charges each bottle with a 5c tax which can be redeemed when you recycle these bottles. This bill reduced roadside bottle litter by 70% and in 2020, it helped recycle 241,505 tons of containers. This app can find places to redeem these bottles for extra pocket change. We can also help you make a difference in this world by signing petitions and taking action.
+</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.81238909264536929" green="0.93456484091402303" blue="0.83404318594503424" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="lI0-L1-20U" firstAttribute="leading" secondItem="ewy-45-Eub" secondAttribute="leading" constant="-11" id="G90-Je-QAA"/>
+                                            <constraint firstItem="H4N-Ff-JMG" firstAttribute="top" secondItem="lI0-L1-20U" secondAttribute="bottom" constant="8" symbolic="YES" id="UVe-61-h6z"/>
+                                            <constraint firstAttribute="height" constant="1500" id="ay4-cI-kXz"/>
+                                            <constraint firstItem="H4N-Ff-JMG" firstAttribute="leading" secondItem="ewy-45-Eub" secondAttribute="leading" constant="54" id="bCK-QN-z0W"/>
+                                            <constraint firstItem="lI0-L1-20U" firstAttribute="top" secondItem="ewy-45-Eub" secondAttribute="top" constant="-95" id="fO3-Vw-LGo"/>
+                                            <constraint firstItem="H4N-Ff-JMG" firstAttribute="top" secondItem="ewy-45-Eub" secondAttribute="top" constant="210" id="idW-QP-oRc"/>
+                                            <constraint firstAttribute="trailing" secondItem="lI0-L1-20U" secondAttribute="trailing" constant="-12" id="x8u-fl-qD8"/>
+                                            <constraint firstAttribute="trailing" secondItem="H4N-Ff-JMG" secondAttribute="trailing" constant="53" id="zyJ-xD-3s5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ewy-45-Eub" secondAttribute="bottom" constant="11" id="Da5-So-AtT"/>
+                                    <constraint firstAttribute="trailing" secondItem="ewy-45-Eub" secondAttribute="trailing" id="o3e-5g-cQW"/>
+                                    <constraint firstItem="ewy-45-Eub" firstAttribute="centerX" secondItem="Oji-CG-mBI" secondAttribute="centerX" id="oqE-KI-zpE"/>
+                                    <constraint firstItem="ewy-45-Eub" firstAttribute="top" secondItem="Oji-CG-mBI" secondAttribute="top" constant="-11" id="pT9-T8-dgU"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="shO-AM-ws3"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="qfO-gT-cet"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hj4-Hm-jX1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Oji-CG-mBI" firstAttribute="trailing" secondItem="H9a-2j-dQ7" secondAttribute="trailing" id="8Xi-cE-6q9"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="H9a-2j-dQ7" secondAttribute="bottom" constant="-62" id="8v2-B1-UW4"/>
+                            <constraint firstItem="14m-Q9-aO8" firstAttribute="top" secondItem="hj4-Hm-jX1" secondAttribute="top" constant="573" id="Ann-Pf-aSH"/>
+                            <constraint firstItem="Oji-CG-mBI" firstAttribute="bottom" secondItem="hj4-Hm-jX1" secondAttribute="bottom" constant="471" id="Art-1l-kwa"/>
+                            <constraint firstItem="Oji-CG-mBI" firstAttribute="leading" secondItem="H9a-2j-dQ7" secondAttribute="leading" id="NLd-sS-YAc"/>
+                            <constraint firstItem="Oji-CG-mBI" firstAttribute="top" secondItem="hj4-Hm-jX1" secondAttribute="top" id="SQD-Px-6jR"/>
+                            <constraint firstItem="H9a-2j-dQ7" firstAttribute="top" secondItem="Oji-CG-mBI" secondAttribute="bottom" constant="-458" id="Vme-0R-JBX"/>
+                            <constraint firstItem="ewy-45-Eub" firstAttribute="width" secondItem="HEa-41-vHj" secondAttribute="width" id="b8A-bK-4Aw"/>
+                            <constraint firstItem="Oji-CG-mBI" firstAttribute="leading" secondItem="hj4-Hm-jX1" secondAttribute="leading" id="gIn-kd-cI7"/>
+                            <constraint firstItem="Oji-CG-mBI" firstAttribute="trailing" secondItem="hj4-Hm-jX1" secondAttribute="trailing" id="quL-aQ-w7q"/>
+                            <constraint firstItem="Oji-CG-mBI" firstAttribute="centerX" secondItem="14m-Q9-aO8" secondAttribute="centerX" id="w83-AN-Nhh"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Learn More" id="DT3-Jz-MGo"/>
+                    <size key="freeformSize" width="414" height="1200"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66x-Wd-QBI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,11 +275,11 @@
             </objects>
             <point key="canvasLocation" x="71" y="1258"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="k51-s9-aWF">
             <objects>
                 <navigationController id="Ikb-oN-86F" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="iIe-Oj-FfG"/>
+                    <tabBarItem key="tabBarItem" title="Map" id="iIe-Oj-FfG"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FqC-zj-NIx">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
