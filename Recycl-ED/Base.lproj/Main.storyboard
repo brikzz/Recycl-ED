@@ -55,7 +55,7 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lKL-FG-0Os">
                                 <rect key="frame" x="0.0" y="289" width="415" height="524"/>
                             </mapView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen_Shot_2021-08-04_at_1.36.10_PM-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="lqu-sB-Dt6">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="lqu-sB-Dt6">
                                 <rect key="frame" x="160" y="113" width="95" height="95"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="95" id="Adl-R6-DNk"/>
@@ -139,9 +139,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14m-Q9-aO8">
                                 <rect key="frame" x="103" y="661" width="208" height="30"/>
                                 <state key="normal" title="Click to see how you can help!"/>
-                                <connections>
-                                    <segue destination="Yw2-kr-vvC" kind="show" id="3Zu-5p-HQ8"/>
-                                </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oji-CG-mBI">
                                 <rect key="frame" x="0.0" y="88" width="414" height="2000"/>
@@ -161,15 +158,15 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgF-l1-Gcd">
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgF-l1-Gcd">
                                                 <rect key="frame" x="27" y="1366" width="360" height="85"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="                             Help Georgia Pass Its Bottle Bill"/>
+                                                <state key="normal" title="                               Help Georgia Pass Its Bottle Bill"/>
                                                 <connections>
                                                     <action selector="georgiaBill:" destination="mut-qq-vPp" eventType="touchUpInside" id="H4x-8c-aIQ"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Educational Links" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkx-O5-K6g">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Educational Links" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkx-O5-K6g">
                                                 <rect key="frame" x="141" y="514" width="133" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -182,33 +179,77 @@
                                                     <constraint firstAttribute="height" constant="85" id="BwF-qU-K8m"/>
                                                 </constraints>
                                                 <state key="normal" title="                            NY's Bottle Bill"/>
+                                                <connections>
+                                                    <action selector="NYBill:" destination="mut-qq-vPp" eventType="touchUpInside" id="qkG-Dx-2Fz"/>
+                                                </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="URB-Wz-pTM">
-                                                <rect key="frame" x="27" y="865" width="120" height="85"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NY bill" translatesAutoresizingMaskIntoConstraints="NO" id="URB-Wz-pTM">
+                                                <rect key="frame" x="38" y="871.5" width="120" height="72"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="72" id="dZl-lk-X3x"/>
+                                                    <constraint firstAttribute="width" constant="120" id="dcS-Ge-Vi4"/>
+                                                </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Petitions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxP-oa-V13">
-                                                <rect key="frame" x="174" y="1320" width="66" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Georgia pic" translatesAutoresizingMaskIntoConstraints="NO" id="8sU-gz-XBp">
+                                                <rect key="frame" x="37" y="1366" width="118" height="85"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="85" id="oJA-A4-bTd"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Petitions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxP-oa-V13">
+                                                <rect key="frame" x="174.5" y="1275" width="66" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Georgia pic" translatesAutoresizingMaskIntoConstraints="NO" id="8sU-gz-XBp">
-                                                <rect key="frame" x="37" y="1366" width="110" height="85"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4E-hP-9e6">
+                                                <rect key="frame" x="27" y="1495" width="360" height="85"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="85" id="tgX-AC-fcu"/>
+                                                </constraints>
+                                                <state key="normal" title="                               Help Make Recycling Easier"/>
+                                                <connections>
+                                                    <action selector="easierRecycling:" destination="mut-qq-vPp" eventType="touchUpInside" id="kqX-kf-31n"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Recyling Easier" translatesAutoresizingMaskIntoConstraints="NO" id="LHB-5T-hKE">
+                                                <rect key="frame" x="37" y="1495" width="118" height="85"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="0Kh-EG-Tqc">
+                                                <rect key="frame" x="160" y="1661" width="95" height="95"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="95" id="82B-ur-AVR"/>
+                                                    <constraint firstAttribute="width" constant="95" id="SHY-5t-a4B"/>
+                                                </constraints>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.83143109083175659" green="0.95638197660446167" blue="0.83171349763870239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="yeJ-jK-ct2" firstAttribute="leading" secondItem="fgF-l1-Gcd" secondAttribute="leading" id="2lA-Jo-pWc"/>
-                                            <constraint firstItem="yeJ-jK-ct2" firstAttribute="leading" secondItem="ewy-45-Eub" secondAttribute="leading" constant="27" id="7ZZ-iT-UAV"/>
-                                            <constraint firstItem="yeJ-jK-ct2" firstAttribute="trailing" secondItem="fgF-l1-Gcd" secondAttribute="trailing" id="GF9-OG-9a0"/>
+                                            <constraint firstItem="O4E-hP-9e6" firstAttribute="leading" secondItem="fgF-l1-Gcd" secondAttribute="leading" id="2JL-nI-2ol"/>
+                                            <constraint firstItem="yeJ-jK-ct2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fgF-l1-Gcd" secondAttribute="leading" id="2lA-Jo-pWc"/>
+                                            <constraint firstItem="yeJ-jK-ct2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ewy-45-Eub" secondAttribute="leading" id="7ZZ-iT-UAV"/>
+                                            <constraint firstItem="0Kh-EG-Tqc" firstAttribute="top" secondItem="O4E-hP-9e6" secondAttribute="bottom" constant="81" id="8Ju-nR-s5V"/>
+                                            <constraint firstItem="8sU-gz-XBp" firstAttribute="top" secondItem="fgF-l1-Gcd" secondAttribute="top" id="8Yp-Ev-cda"/>
+                                            <constraint firstItem="yeJ-jK-ct2" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fgF-l1-Gcd" secondAttribute="trailing" id="GF9-OG-9a0"/>
+                                            <constraint firstItem="Tkx-O5-K6g" firstAttribute="top" secondItem="H4N-Ff-JMG" secondAttribute="bottom" constant="58" id="I38-9t-PxB"/>
+                                            <constraint firstItem="8sU-gz-XBp" firstAttribute="leading" secondItem="ewy-45-Eub" secondAttribute="leading" constant="37" id="Li3-7I-Qjb"/>
+                                            <constraint firstItem="URB-Wz-pTM" firstAttribute="centerY" secondItem="yeJ-jK-ct2" secondAttribute="centerY" id="OJo-bb-hGm"/>
+                                            <constraint firstItem="O4E-hP-9e6" firstAttribute="leading" secondItem="URB-Wz-pTM" secondAttribute="leading" id="Olh-29-PUZ"/>
+                                            <constraint firstItem="O4E-hP-9e6" firstAttribute="trailing" secondItem="fgF-l1-Gcd" secondAttribute="trailing" id="Yti-hq-9Qf"/>
+                                            <constraint firstAttribute="bottom" secondItem="O4E-hP-9e6" secondAttribute="bottom" constant="420" id="YyH-y2-eC6"/>
                                             <constraint firstAttribute="height" constant="2000" id="ay4-cI-kXz"/>
                                             <constraint firstItem="H4N-Ff-JMG" firstAttribute="leading" secondItem="ewy-45-Eub" secondAttribute="leading" constant="54" id="bCK-QN-z0W"/>
+                                            <constraint firstItem="8sU-gz-XBp" firstAttribute="bottom" secondItem="fgF-l1-Gcd" secondAttribute="bottom" id="ccf-5h-2B2"/>
+                                            <constraint firstItem="O4E-hP-9e6" firstAttribute="top" secondItem="fgF-l1-Gcd" secondAttribute="bottom" constant="44" id="dzD-ar-anP"/>
+                                            <constraint firstItem="0Kh-EG-Tqc" firstAttribute="centerX" secondItem="O4E-hP-9e6" secondAttribute="centerX" id="gKg-5W-1LO"/>
                                             <constraint firstItem="H4N-Ff-JMG" firstAttribute="top" secondItem="ewy-45-Eub" secondAttribute="top" constant="157" id="idW-QP-oRc"/>
                                             <constraint firstItem="yeJ-jK-ct2" firstAttribute="centerX" secondItem="Tkx-O5-K6g" secondAttribute="centerX" id="usB-fB-38k"/>
+                                            <constraint firstItem="URB-Wz-pTM" firstAttribute="trailing" secondItem="8sU-gz-XBp" secondAttribute="trailing" id="vMm-59-Mu4"/>
+                                            <constraint firstItem="O4E-hP-9e6" firstAttribute="centerX" secondItem="MxP-oa-V13" secondAttribute="centerX" id="web-Tf-bRb"/>
                                             <constraint firstItem="yeJ-jK-ct2" firstAttribute="centerX" secondItem="H4N-Ff-JMG" secondAttribute="centerX" id="yRF-fx-kZl"/>
+                                            <constraint firstItem="fgF-l1-Gcd" firstAttribute="top" secondItem="MxP-oa-V13" secondAttribute="bottom" constant="70" id="zGn-PY-fhT"/>
                                             <constraint firstAttribute="trailing" secondItem="H4N-Ff-JMG" secondAttribute="trailing" constant="53" id="zyJ-xD-3s5"/>
                                         </constraints>
                                     </view>
@@ -216,12 +257,15 @@
                                         <rect key="frame" x="27" y="598" width="360" height="85"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <state key="normal" title="                            Basics of Recycling"/>
+                                        <connections>
+                                            <action selector="basics:" destination="mut-qq-vPp" eventType="touchUpInside" id="v68-fT-uc7"/>
+                                        </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2aQ-R4-3jD">
-                                        <rect key="frame" x="27" y="598" width="120" height="85"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Basics" translatesAutoresizingMaskIntoConstraints="NO" id="2aQ-R4-3jD">
+                                        <rect key="frame" x="27" y="605" width="120" height="71"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Screen_Shot_2021-08-04_at_1.36.10_PM-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="uVV-lQ-Zwl">
-                                        <rect key="frame" x="160" y="27" width="95" height="95"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="uVV-lQ-Zwl">
+                                        <rect key="frame" x="160" y="27" width="94" height="95"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="95" id="j0x-bm-Qr6"/>
                                         </constraints>
@@ -232,10 +276,16 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="85" id="Jgv-eL-1do"/>
                                         </constraints>
-                                        <state key="normal" title="                             Bottle Bill"/>
+                                        <state key="normal" title="                      Bottle Bill"/>
+                                        <connections>
+                                            <action selector="bottleBill:" destination="mut-qq-vPp" eventType="touchUpInside" id="THr-gO-Fq5"/>
+                                        </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mwp-8a-I1E">
-                                        <rect key="frame" x="27" y="727" width="120" height="85"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Bottle bill" translatesAutoresizingMaskIntoConstraints="NO" id="Mwp-8a-I1E">
+                                        <rect key="frame" x="27" y="735" width="119" height="71"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="71" id="n4A-da-4bx"/>
+                                        </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2j-Ak-IHb">
                                         <rect key="frame" x="27" y="983" width="360" height="85"/>
@@ -244,48 +294,64 @@
                                             <constraint firstAttribute="height" constant="85" id="fmz-P8-cnY"/>
                                         </constraints>
                                         <state key="normal" title="                              Plastics &amp; Climate Change"/>
+                                        <connections>
+                                            <action selector="PCC:" destination="mut-qq-vPp" eventType="touchUpInside" id="bzT-l9-OcE"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Plastics&amp;CC" translatesAutoresizingMaskIntoConstraints="NO" id="hCU-5p-nlb">
                                         <rect key="frame" x="37" y="991" width="109" height="69"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIf-kd-kaU">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIf-kd-kaU">
                                         <rect key="frame" x="27" y="1114" width="360" height="85"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="                             Plastic Waste &amp; Climate Change"/>
+                                        <connections>
+                                            <action selector="PWCC:" destination="mut-qq-vPp" eventType="touchUpInside" id="OSj-TY-z17"/>
+                                        </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PlasticWaste&amp;CC" translatesAutoresizingMaskIntoConstraints="NO" id="99Q-6D-j2j">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlasticWaste&amp;CC" translatesAutoresizingMaskIntoConstraints="NO" id="99Q-6D-j2j">
                                         <rect key="frame" x="37" y="1114" width="110" height="85"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="IRN-we-zgL" firstAttribute="top" secondItem="uVV-lQ-Zwl" secondAttribute="bottom" constant="476" id="2bb-Hx-Bjv"/>
+                                    <constraint firstItem="qfO-gT-cet" firstAttribute="bottom" secondItem="NIf-kd-kaU" secondAttribute="bottom" constant="801" id="4mk-AN-MI9"/>
+                                    <constraint firstItem="NIf-kd-kaU" firstAttribute="top" secondItem="99Q-6D-j2j" secondAttribute="top" id="5Sh-KV-mzp"/>
                                     <constraint firstItem="x2j-Ak-IHb" firstAttribute="leading" secondItem="Mwp-8a-I1E" secondAttribute="leading" id="7t8-cf-fKb"/>
                                     <constraint firstItem="LC3-iS-o6C" firstAttribute="top" secondItem="Oji-CG-mBI" secondAttribute="top" constant="727" id="9HI-xP-Pku"/>
-                                    <constraint firstItem="x2j-Ak-IHb" firstAttribute="leading" secondItem="hCU-5p-nlb" secondAttribute="leading" id="9lq-4T-Eao"/>
-                                    <constraint firstItem="2aQ-R4-3jD" firstAttribute="top" secondItem="qfO-gT-cet" secondAttribute="top" constant="598" id="AWw-df-bfc"/>
-                                    <constraint firstItem="x2j-Ak-IHb" firstAttribute="bottom" secondItem="hCU-5p-nlb" secondAttribute="bottom" id="BA9-rO-pWY"/>
+                                    <constraint firstItem="x2j-Ak-IHb" firstAttribute="leading" secondItem="hCU-5p-nlb" secondAttribute="leading" constant="-10" id="9lq-4T-Eao"/>
+                                    <constraint firstItem="2aQ-R4-3jD" firstAttribute="top" secondItem="qfO-gT-cet" secondAttribute="top" constant="605" id="AWw-df-bfc"/>
+                                    <constraint firstItem="x2j-Ak-IHb" firstAttribute="bottom" secondItem="hCU-5p-nlb" secondAttribute="bottom" constant="8" id="BA9-rO-pWY"/>
+                                    <constraint firstItem="NIf-kd-kaU" firstAttribute="top" secondItem="x2j-Ak-IHb" secondAttribute="bottom" constant="46" id="Cct-KS-0Ya"/>
                                     <constraint firstAttribute="bottom" secondItem="ewy-45-Eub" secondAttribute="bottom" constant="11" id="Da5-So-AtT"/>
-                                    <constraint firstItem="2aQ-R4-3jD" firstAttribute="bottom" secondItem="IRN-we-zgL" secondAttribute="bottom" id="EGh-qF-YGh"/>
+                                    <constraint firstItem="99Q-6D-j2j" firstAttribute="trailing" secondItem="2aQ-R4-3jD" secondAttribute="trailing" id="Dbz-fF-kVc"/>
+                                    <constraint firstItem="Mwp-8a-I1E" firstAttribute="centerX" secondItem="2aQ-R4-3jD" secondAttribute="centerX" id="DiV-nJ-58J"/>
+                                    <constraint firstItem="2aQ-R4-3jD" firstAttribute="bottom" secondItem="IRN-we-zgL" secondAttribute="bottom" constant="-7" id="EGh-qF-YGh"/>
                                     <constraint firstItem="LC3-iS-o6C" firstAttribute="leading" secondItem="2aQ-R4-3jD" secondAttribute="leading" id="FJQ-l7-8H8"/>
                                     <constraint firstItem="uVV-lQ-Zwl" firstAttribute="leading" secondItem="qfO-gT-cet" secondAttribute="leading" constant="160" id="Gs6-lW-6cc"/>
+                                    <constraint firstItem="NIf-kd-kaU" firstAttribute="bottom" secondItem="99Q-6D-j2j" secondAttribute="bottom" id="Jg8-pU-Ru1"/>
                                     <constraint firstItem="LC3-iS-o6C" firstAttribute="leading" secondItem="IRN-we-zgL" secondAttribute="leading" id="PPh-0t-2UP"/>
-                                    <constraint firstItem="x2j-Ak-IHb" firstAttribute="top" secondItem="hCU-5p-nlb" secondAttribute="top" id="SQX-XT-Wkm"/>
+                                    <constraint firstItem="x2j-Ak-IHb" firstAttribute="top" secondItem="hCU-5p-nlb" secondAttribute="top" constant="-8" id="SQX-XT-Wkm"/>
                                     <constraint firstItem="x2j-Ak-IHb" firstAttribute="centerX" secondItem="uVV-lQ-Zwl" secondAttribute="centerX" id="U3n-5i-9kq"/>
                                     <constraint firstItem="yeJ-jK-ct2" firstAttribute="top" secondItem="LC3-iS-o6C" secondAttribute="bottom" constant="42" id="VfU-fo-siw"/>
+                                    <constraint firstItem="Mwp-8a-I1E" firstAttribute="leading" secondItem="NIf-kd-kaU" secondAttribute="leading" id="YdT-aj-DBJ"/>
                                     <constraint firstItem="qfO-gT-cet" firstAttribute="trailing" secondItem="2aQ-R4-3jD" secondAttribute="trailing" constant="267" id="aP9-LS-652"/>
                                     <constraint firstItem="x2j-Ak-IHb" firstAttribute="trailing" secondItem="LC3-iS-o6C" secondAttribute="trailing" id="g5H-MQ-s35"/>
+                                    <constraint firstItem="Mwp-8a-I1E" firstAttribute="trailing" secondItem="hCU-5p-nlb" secondAttribute="trailing" id="j5h-kE-KSm"/>
                                     <constraint firstItem="uVV-lQ-Zwl" firstAttribute="top" secondItem="qfO-gT-cet" secondAttribute="top" constant="27" id="jco-tO-6t5"/>
+                                    <constraint firstItem="NIf-kd-kaU" firstAttribute="trailing" secondItem="x2j-Ak-IHb" secondAttribute="trailing" id="koB-O3-F33"/>
                                     <constraint firstItem="x2j-Ak-IHb" firstAttribute="top" secondItem="yeJ-jK-ct2" secondAttribute="bottom" constant="44" id="lsy-DJ-OJg"/>
                                     <constraint firstItem="qfO-gT-cet" firstAttribute="trailing" secondItem="LC3-iS-o6C" secondAttribute="trailing" constant="27" id="mTP-Jl-HVV"/>
-                                    <constraint firstItem="2aQ-R4-3jD" firstAttribute="top" secondItem="IRN-we-zgL" secondAttribute="top" id="nFV-Y1-nNh"/>
+                                    <constraint firstItem="2aQ-R4-3jD" firstAttribute="top" secondItem="IRN-we-zgL" secondAttribute="top" constant="7" id="nFV-Y1-nNh"/>
                                     <constraint firstAttribute="trailing" secondItem="ewy-45-Eub" secondAttribute="trailing" id="o3e-5g-cQW"/>
                                     <constraint firstItem="LC3-iS-o6C" firstAttribute="top" secondItem="IRN-we-zgL" secondAttribute="bottom" constant="44" id="oGH-wz-dQr"/>
                                     <constraint firstItem="LC3-iS-o6C" firstAttribute="trailing" secondItem="IRN-we-zgL" secondAttribute="trailing" id="oVg-cJ-v95"/>
                                     <constraint firstItem="ewy-45-Eub" firstAttribute="centerX" secondItem="Oji-CG-mBI" secondAttribute="centerX" id="oqE-KI-zpE"/>
                                     <constraint firstItem="ewy-45-Eub" firstAttribute="top" secondItem="Oji-CG-mBI" secondAttribute="top" constant="-11" id="pT9-T8-dgU"/>
+                                    <constraint firstItem="Mwp-8a-I1E" firstAttribute="top" secondItem="IRN-we-zgL" secondAttribute="bottom" constant="52" id="teg-MZ-N82"/>
                                     <constraint firstItem="x2j-Ak-IHb" firstAttribute="leading" secondItem="LC3-iS-o6C" secondAttribute="leading" id="uhl-gO-0sq"/>
                                     <constraint firstItem="LC3-iS-o6C" firstAttribute="leading" secondItem="qfO-gT-cet" secondAttribute="leading" constant="27" id="wto-8r-MQe"/>
+                                    <constraint firstItem="99Q-6D-j2j" firstAttribute="leading" secondItem="hCU-5p-nlb" secondAttribute="leading" id="x68-eP-6sw"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="shO-AM-ws3"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="qfO-gT-cet"/>
@@ -313,43 +379,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66x-Wd-QBI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1742.0289855072465" y="1625.8928571428571"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="b6U-E4-rib">
-            <objects>
-                <viewController id="Yw2-kr-vvC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZRL-XZ-gMS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click here to help Georgia implement the bottle bill!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAz-uN-RTD">
-                                <rect key="frame" x="13" y="129" width="389" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" link="YES"/>
-                                </accessibility>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kf-JE-8US">
-                                <rect key="frame" x="184" y="224" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="GeorgiaPetition:" destination="BHZ-RL-5n5" eventType="touchUpInside" id="evr-OG-42C"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="CYa-br-yt2"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ZII-gH-UFh"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CmF-ta-wc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="BHZ-RL-5n5" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="-882.60869565217399" y="1273.6607142857142"/>
         </scene>
         <!--Minigame-->
         <scene sceneID="J2a-ak-QJq">
@@ -446,10 +475,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Basics" width="300" height="269"/>
+        <image name="Bottle bill" width="368" height="382"/>
         <image name="Georgia pic" width="864" height="484"/>
+        <image name="Logo" width="260" height="248"/>
+        <image name="NY bill" width="396" height="348"/>
         <image name="PlasticWaste&amp;CC" width="1228" height="586"/>
         <image name="Plastics&amp;CC" width="918" height="586"/>
-        <image name="Screen_Shot_2021-08-04_at_1.36.10_PM-removebg-preview" width="260" height="248"/>
+        <image name="Recyling Easier" width="1146" height="458"/>
         <image name="arrowtriangle.forward" catalog="system" width="128" height="113"/>
         <image name="capsule.fill" catalog="system" width="128" height="94"/>
         <systemColor name="labelColor">
