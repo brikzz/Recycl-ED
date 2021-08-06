@@ -704,12 +704,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quizimagethree" translatesAutoresizingMaskIntoConstraints="NO" id="Trq-Ul-c0b">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quizimagetwo" translatesAutoresizingMaskIntoConstraints="NO" id="Trq-Ul-c0b">
                                 <rect key="frame" x="-73" y="494" width="314" height="221"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quizimagethre" translatesAutoresizingMaskIntoConstraints="NO" id="Pe9-1u-Uf5">
-                                <rect key="frame" x="-138" y="401" width="419" height="314"/>
+                                <rect key="frame" x="-137" y="401" width="419" height="314"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -868,7 +868,6 @@
         <image name="quizimagefour" width="147" height="512"/>
         <image name="quizimageone" width="315" height="560"/>
         <image name="quizimagethre" width="497" height="1070"/>
-        <image name="quizimagethree" width="210" height="512"/>
         <image name="quizimagetwo" width="313" height="763"/>
         <image name="quizimagezero" width="320" height="434"/>
         <image name="rectangle.fill" catalog="system" width="128" height="93"/>
