@@ -488,6 +488,7 @@
                     <connections>
                         <outlet property="GradeCaptionLabel" destination="CAd-a0-4N7" id="UXB-Yv-Zi3"/>
                         <outlet property="GradeLabel" destination="bfg-Gj-Nel" id="NI5-ln-M4u"/>
+                        <outlet property="plant1" destination="wty-kG-gS6" id="FVv-Ij-shV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="84G-AI-eJa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -579,8 +580,12 @@
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" red="0.47430512400000002" green="0.26404446869999998" blue="0.064196314360000006" alpha="0.93063172599999999" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ESm-OS-Lrt">
-                                <rect key="frame" x="-57" y="362" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quizimagetwo" translatesAutoresizingMaskIntoConstraints="NO" id="wOi-Lr-TcV">
+                                <rect key="frame" x="4" y="503" width="149" height="227"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quizimageone" translatesAutoresizingMaskIntoConstraints="NO" id="dWd-e3-VQX">
+                                <rect key="frame" x="-66" y="566" width="290" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -592,6 +597,8 @@
                     <connections>
                         <outlet property="GradeCaptionLabel" destination="xuN-5y-Q9L" id="8L2-Qb-vAC"/>
                         <outlet property="GradeLabel" destination="Jij-fb-XA2" id="baV-uy-6hJ"/>
+                        <outlet property="plant1" destination="dWd-e3-VQX" id="HF5-fY-Otd"/>
+                        <outlet property="plant2" destination="wOi-Lr-TcV" id="mzl-bn-kjx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWi-1k-uMc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -683,8 +690,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sgv-Rd-d2P">
-                                <rect key="frame" x="-26" y="369" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quizimagethree" translatesAutoresizingMaskIntoConstraints="NO" id="Trq-Ul-c0b">
+                                <rect key="frame" x="-73" y="494" width="314" height="221"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quizimagethre" translatesAutoresizingMaskIntoConstraints="NO" id="Pe9-1u-Uf5">
+                                <rect key="frame" x="-138" y="401" width="419" height="314"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -696,6 +707,9 @@
                     <connections>
                         <outlet property="GradeCaptionLabel" destination="h3v-2P-W84" id="PYE-qF-zri"/>
                         <outlet property="GradeLabel" destination="p70-gM-0m5" id="ECr-ur-sfa"/>
+                        <outlet property="plant2" destination="Trq-Ul-c0b" id="kAs-Af-7Qr"/>
+                        <outlet property="plant3" destination="Pe9-1u-Uf5" id="zxP-G3-3Wo"/>
+                        <outlet property="planttwo" destination="Trq-Ul-c0b" id="l9q-dp-tyY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="88v-vh-G9N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -785,7 +799,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quizimagefour" translatesAutoresizingMaskIntoConstraints="NO" id="3g9-ZS-ogy">
-                                <rect key="frame" x="-93" y="333" width="333" height="391"/>
+                                <rect key="frame" x="-100" y="304" width="354" height="420"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quizimagethre" translatesAutoresizingMaskIntoConstraints="NO" id="L8L-Tc-NLE">
+                                <rect key="frame" x="-95" y="432" width="329" height="292"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -797,6 +815,8 @@
                     <connections>
                         <outlet property="GradeCaptionLabel" destination="vpg-G2-dht" id="YPe-cG-cq7"/>
                         <outlet property="GradeLabel" destination="yBB-6n-1st" id="Yd3-vW-ECA"/>
+                        <outlet property="plant3" destination="L8L-Tc-NLE" id="SUr-GW-DFO"/>
+                        <outlet property="plant4" destination="3g9-ZS-ogy" id="OCw-1v-xsc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HKa-bc-SkA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -833,6 +853,9 @@
         <image name="arrowtriangle.forward" catalog="system" width="128" height="113"/>
         <image name="quizimagefour" width="147" height="512"/>
         <image name="quizimageone" width="315" height="560"/>
+        <image name="quizimagethre" width="497" height="1070"/>
+        <image name="quizimagethree" width="210" height="512"/>
+        <image name="quizimagetwo" width="313" height="763"/>
         <image name="rectangle.fill" catalog="system" width="128" height="93"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

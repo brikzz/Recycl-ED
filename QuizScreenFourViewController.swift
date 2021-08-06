@@ -9,7 +9,9 @@ import UIKit
 
 class QuizScreenFourViewController: UIViewController {
 
+    @IBOutlet weak var plant3: UIImageView!
     
+    @IBOutlet weak var plant4: UIImageView!
     
     @IBOutlet weak var GradeCaptionLabel: UILabel!
     
@@ -17,24 +19,33 @@ class QuizScreenFourViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        plant3.isHidden = false
+        plant4.isHidden = true
         // Do any additional setup after loading the view.
     }
     @IBAction func ChoiceAButtonPressed(_ sender: UIButton) {
         GradeLabel.text = "4/4"
         GradeCaptionLabel.text = "Incredible! Soon you’ll have a full garden."
+        plant3.isHidden = true
+        plant4.isHidden = false
     }
     @IBAction func ChoiceBButtonPressed(_ sender: UIButton) {
         GradeLabel.text = "3/4"
         GradeCaptionLabel.text = "Uh oh! It’s okay, you got this!"
+        plant3.isHidden = false
+        plant4.isHidden = true
     }
     @IBAction func ChoiceCButtonPressed(_ sender: UIButton) {
         GradeLabel.text = "3/4"
         GradeCaptionLabel.text = "Oh no! Try again"
+        plant3.isHidden = false
+        plant4.isHidden = true
     }
     @IBAction func ChoiceDButtonPressed(_ sender: UIButton) {
         GradeLabel.text = "3/4"
         GradeCaptionLabel.text = "Uh oh! It’s okay, you got this!"
+        plant3.isHidden = false
+        plant4.isHidden = true
     }
     
 
