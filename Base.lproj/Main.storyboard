@@ -256,7 +256,9 @@
                                                 <state key="normal" title="                             Plastic Waste &amp; Climate Change"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makeBounds" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.cornerRadius" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="PWCC:" destination="mut-qq-vPp" eventType="touchUpInside" id="OSj-TY-z17"/>
