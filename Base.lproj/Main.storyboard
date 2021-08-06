@@ -488,6 +488,10 @@
                                 <rect key="frame" x="-70" y="561" width="290" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quizimagezero" translatesAutoresizingMaskIntoConstraints="NO" id="6Ee-X6-5U3">
+                                <rect key="frame" x="-45" y="598" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bTn-F3-bwz"/>
                         <color key="backgroundColor" red="0.82830275649999996" green="0.90714818779999995" blue="0.74755597709999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -497,6 +501,7 @@
                     <connections>
                         <outlet property="GradeCaptionLabel" destination="CAd-a0-4N7" id="UXB-Yv-Zi3"/>
                         <outlet property="GradeLabel" destination="bfg-Gj-Nel" id="NI5-ln-M4u"/>
+                        <outlet property="plant0" destination="6Ee-X6-5U3" id="wcv-HR-MMC"/>
                         <outlet property="plant1" destination="wty-kG-gS6" id="FVv-Ij-shV"/>
                     </connections>
                 </viewController>
@@ -599,7 +604,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="15j-60-FLH"/>
-                        <color key="backgroundColor" red="0.82830275649999996" green="0.90714818779999995" blue="0.74755597709999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.8081962466" green="0.90962213280000004" blue="0.73224681619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.16143492970000001" green="0.23602217859999999" blue="0.069161381120000004" alpha="0.93063172599999999" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="OQX-aI-97I"/>
@@ -865,6 +870,7 @@
         <image name="quizimagethre" width="497" height="1070"/>
         <image name="quizimagethree" width="210" height="512"/>
         <image name="quizimagetwo" width="313" height="763"/>
+        <image name="quizimagezero" width="320" height="434"/>
         <image name="rectangle.fill" catalog="system" width="128" height="93"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
