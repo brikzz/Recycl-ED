@@ -389,7 +389,7 @@
             </objects>
             <point key="canvasLocation" x="-1742.0289855072465" y="1625.8928571428571"/>
         </scene>
-        <!--Minigame-->
+        <!--Mini Quiz-->
         <scene sceneID="J2a-ak-QJq">
             <objects>
                 <viewController id="H49-T9-wwD" customClass="QuizScreenOneViewController" customModule="Recycl_ED" customModuleProvider="target" sceneMemberID="viewController">
@@ -497,7 +497,7 @@
                         <color key="backgroundColor" red="0.82830275649999996" green="0.90714818779999995" blue="0.74755597709999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.16143492970000001" green="0.23602217859999999" blue="0.069161381120000004" alpha="0.93063172599999999" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Minigame" id="fIf-o6-A2m"/>
+                    <navigationItem key="navigationItem" title="Mini Quiz" id="fIf-o6-A2m"/>
                     <connections>
                         <outlet property="GradeCaptionLabel" destination="CAd-a0-4N7" id="UXB-Yv-Zi3"/>
                         <outlet property="GradeLabel" destination="bfg-Gj-Nel" id="NI5-ln-M4u"/>
